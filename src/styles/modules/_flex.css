@@ -37,24 +37,20 @@
         flex-wrap: wrap;
     }
 
-    &--v-center{
+    &--justify-center{
         justify-content: center;
     }
 
-    &--h-center{
+    &--aligni-center{
         align-items: center;
     }
 
-    &--space-around{
+    &--justify-space-around{
         justify-content: space-around;
     }
 
-    &--space-between{
+    &--justify-space-between{
         justify-content: space-between;
-    }
-
-    &__child--v-center{
-        align-self: center;
     }
 
     &--padding-bottom{
