@@ -6,6 +6,7 @@
         /* border: 1px solid black; */
         font-weight: 600;
         max-width: 50%;
+        flex-shrink: 1;
     }
 
     &__thumbnail__slide-container{
@@ -53,6 +54,8 @@
 
     &__image{
         display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     &__thumbnail__button{
