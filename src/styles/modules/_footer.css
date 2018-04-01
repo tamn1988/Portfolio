@@ -1,0 +1,27 @@
+.footer__container{
+    height: 100%;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.footer__icon{
+    font-size: 2rem;
+    border: 2px solid $altGreen;
+    padding: .5rem;
+    color: $altGreen;
+}
+
+.footer__text{
+    text-transform: uppercase;
+    text-align: center;
+    color: $altRed;
+
+    &--white{
+        color: #fff;
+    }
+}

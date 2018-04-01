@@ -1,0 +1,80 @@
+.primary-nav{
+    width: 100%;
+    font-size: .9rem;
+    height: 100%;
+
+    @include atMedium{
+        font-size: 1.1rem;
+        height: 60px;
+    }
+
+    &__mobile-icon{
+        display: block;
+        margin: 0 auto;
+        color: $mainColor;
+        font-size: 1.2rem;
+
+        @include atMedium{
+            display: none;
+            color: #fff;
+        }
+    }
+
+    &__a{
+        text-decoration: none;
+        color: $mainColor;
+        transition: color .4s linear;
+        display: block;
+        text-align: center;
+
+        @include atMedium{
+            display: static;
+            text-align: none;
+            color:#fff;
+        }
+    }
+
+    &__a:hover{
+        @include atMedium{
+            color: $altGreen;
+        }
+    }
+
+    &__ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    &__li{
+        list-style: none;
+        width: 25%;
+        height: 100%;
+        padding: .5rem;
+        transition: background-color .4s linear;
+
+        @include atMedium{
+            padding: 0;
+            opacity: 1;
+            height: auto;
+            width: auto;
+            margin-right: 35px;
+        }
+    }
+
+    &--a-is-highlighted{
+        @include atMedium{
+            color: $altGreen;
+        }
+
+    }
+
+
+    &--li-is-highlighted{
+        background-color: $altGreen;
+
+        @include atMedium{
+            background-color: inherit;
+        }
+    }
+
+}

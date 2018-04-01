@@ -1,0 +1,77 @@
+.hexagon__wrapper{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+
+    &--large{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+.hexagon{
+    background-color: $altGreen;
+    height: 100%;
+    width: calc(100% * 0.57735);
+    display: inline-block;
+    overflow: hidden;
+
+    i{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+.hexagon:before{
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: '';
+    transform: rotateZ(60deg);
+    overflow: hidden;
+
+}
+
+.hexagon:after {
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: '';
+    transform: rotateZ(-60deg);
+    overflow: hidden;
+}
+
+.hexagon__icon{
+    font-size: 3rem;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    top: 22px;
+    left: 22px;
+}
+
+
+.hexagon__image{
+    background-image: url("https://placeimg.com/300/300/animals");
+    z-index: 5;
+}
+
+.hexagon__image:before{
+    background-image: url("https://placeimg.com/300/300/animals");
+    z-index: -1;
+}
+
+.hexagon__image:after{
+    background-image: url("https://placeimg.com/300/300/animals");
+    z-index: -2;
+}

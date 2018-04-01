@@ -1,0 +1,9 @@
+/* *{
+    border: 1px solid red;
+} */
+
+body{
+    font-family: 'Open Sans', sans-seriff;
+    line-height: 1.5;
+    background-color: #eeeded;
+}

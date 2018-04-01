@@ -1,0 +1,55 @@
+.about-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    flex-basis: 48.5%;
+
+    @include atMedium{
+        flex-basis: 24%;
+    }
+
+    &__title{
+        color: $mainColor;
+        font-size: 1.5rem;
+        margin: 10px 0 10px 0;
+    }
+
+    p{
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+}
+
+.about__me{
+    text-align: center;
+    flex-basis: 100%;
+
+    @include atMedium{
+        flex-basis: 48.5%;
+    }
+
+    p{
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+}
+
+.about__me__image {
+    width: 250px;
+    height: 200px;
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+
+.about__me__title{
+    color: $mainColor;
+    font-size: 1.5rem;
+}
+
+
+
+

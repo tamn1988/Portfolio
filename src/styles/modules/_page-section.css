@@ -1,0 +1,28 @@
+.page-section{
+    padding: 5rem 0;
+
+    &--top-arrow-design{
+        clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    &--gray{
+        background-color: #eeeded;
+    }
+
+    &--blue{
+        background-color: #0b182b;
+    }
+
+    &--white{
+        background-color: #fff;
+    }
+
+    &--arch{
+        /* clip-path:polygon(0 85%, 50% 100%, 100% 85%); */
+    }
+}
+
+.page-section__footer{
+    background-color:#191d24;
+    height: 150px;
+}

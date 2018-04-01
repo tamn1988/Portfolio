@@ -1,0 +1,50 @@
+.generic-title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $mainColor;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    margin: 0;
+    opacity: 0;
+
+
+
+    &--top-margin{
+        margin-top: 3rem;
+    }
+
+    &--green{
+        color: $altGreen;
+    }
+
+    &--white{
+        color: #fff;
+    }
+
+    &__hr{
+        width: 70px;
+        border-top: 2px solid $mainColor;
+        margin-bottom: 3rem;
+        opacity: 0;
+
+
+
+        &--green{
+            border-top: 2px solid $altGreen;
+        }
+
+        &--white{
+            border-top: 2px solid #fff;
+        }
+
+
+        @include atMedium{
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__hr--wide{
+        width: 100px;
+    }
+}

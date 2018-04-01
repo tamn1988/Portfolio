@@ -1,0 +1,16 @@
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1135px;
+
+    @include atMedium{
+        padding: 0 35px 0 35px;
+    }
+
+
+    &--no-padding-until-medium{
+        padding: 0;
+    }
+}

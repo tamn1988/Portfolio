@@ -1,0 +1,21 @@
+@import 'modules/_mixins.css';
+@import 'modules/_variables.css';
+@import 'modules/_global.css';
+@import 'modules/_animations.css';
+@import 'modules/_flex.css';
+@import 'modules/_wrapper.css';
+@import 'modules/_large-hero.css';
+@import 'modules/_site-header.css';
+@import 'modules/_primary-nav.css';
+@import 'modules/_page-section.css';
+@import 'modules/_hexagon.css';
+@import 'modules/_generic-title.css';
+@import 'modules/_about.css';
+@import 'modules/_skills-bar.css';
+@import 'modules/_my-work.css';
+@import 'modules/_contact.css';
+@import 'modules/_footer.css';
+@import 'modules/_sticky.css';
+
+
+

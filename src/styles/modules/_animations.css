@@ -1,0 +1,110 @@
+@keyframes slideIn{
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes slideInLeft{
+    0% { margin-left:-800px; }
+    80% { margin-left:0px; }
+    100% {margin-left: 0px;}
+}
+
+@keyframes slideInRight{
+    0% { margin-right:-800px; }
+    80% { margin-right:0px; }
+    100% {margin-right: 0px;}
+}
+
+@keyframes reveal{
+    0% {opacity: 0}
+    20% {opacity: 0}
+    35% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes flash{
+    0% {opacity: 0}
+    20% {opacity: 1}
+    80% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes fill {
+    0% {width: 0}
+    35% {width: 0}
+    100% {width: 100%}
+}
+
+.animations--margin-right--hide{
+    margin-right: -800px;
+}
+
+.animations--margin-left--hide{
+    margin-left: -800px;
+}
+
+.animations--opacity--hide{
+    opacity: 0;
+}
+
+.animations--width--hide{
+    width: 0;
+}
+
+.animations__generic-title--slidein{
+    animation: slideIn 3s 1, reveal 1.5s 1;
+    animation-fill-mode: forwards;
+}
+
+.animations__generic-hr--slidein{
+    animation: slideIn 4s 1, reveal 2s 1;
+    animation-fill-mode: forwards;
+}
+
+.animations__skills-bar--slidein{
+
+    margin-left: 0;
+
+    @include atMedium{
+        animation: slideInLeft 2s 1;
+        animation-fill-mode: forwards;
+    }
+
+}
+
+.animations__skills-bar--fill{
+    animation: fill 2s 1;
+    animation-fill-mode: forwards;
+
+    @include atMedium{
+        animation: fill 4s 1;
+        animation-fill-mode: forwards;
+    }
+
+}
+
+.animations__about-me--slidein-right{
+    margin-right: 0;
+    animation: slideInRightSlow 4s 1;
+    animation-fill-mode: forwards;
+
+    @include atMedium{
+        animation: slideInRight 2s 1, reveal 1s 1;
+        animation-fill-mode: forwards;
+    }
+
+}
+
+
+.animations--ease-out{
+    opacity: 0;
+    transition: opacity .5s ease-out, transform .5s ease-out;
+    transform: scale(1.15);
+
+    &--is-visible{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

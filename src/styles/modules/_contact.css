@@ -1,0 +1,51 @@
+.contact__form{
+    color: #fff;
+    width: 80%;
+    margin: 3rem 0;
+
+    &__button{
+        padding: 1rem 3rem;
+        background-color: #0b182b;
+        border: 2px solid #fff;
+        color: #fff;
+        text-transform: uppercase;
+        transition: .2s all linear;
+        font-weight: 600;
+        letter-spacing: .2rem;
+
+        &:hover{
+            cursor: pointer;
+            background-color: $altGreen;
+            border: 2px solid $altGreen;
+        }
+    }
+
+    @include atMedium{
+        width: 50%;
+    }
+
+    input, textarea{
+        width: 100%;
+        margin-bottom: .6rem;
+        background-color: #302f3b;
+        border: none;
+        padding: .2rem;
+        box-sizing: border-box;
+        color: #fff;
+        transition: all .3s linear;
+        outline: none;
+
+        &:focus{
+            border: 1px solid $altGreen;
+            box-shadow: 0 0 5px $altGreen;
+        }
+
+
+    }
+
+    input{
+        height: 2rem;
+    }
+
+}
+
