@@ -1,7 +1,19 @@
 .contact__form{
     color: #fff;
-    width: 80%;
+    width: 95%;
     margin: 3rem 0;
+
+    @include atSmall{
+        width: 85%;
+    }
+
+    @include atMedium{
+        width: 70%;
+    }
+
+    @include atLarge{
+        width: 50%;
+    }
 
     &__button{
         padding: 1rem 3rem;
@@ -20,9 +32,7 @@
         }
     }
 
-    @include atMedium{
-        width: 50%;
-    }
+
 
     input, textarea{
         width: 100%;
