@@ -17,15 +17,13 @@
 
     &__title{
         color: $mainColor;
-        font-size: 1.5rem;
-        margin: 10px 0 10px 0;
+        margin: 1rem;
     }
 
     p{
-        margin: 0;
-        font-size: 1.2rem;
-        font-weight: 300;
+        margin:0;
     }
+
 }
 
 .about__me{
@@ -38,8 +36,6 @@
 
     p{
         margin: 0;
-        font-size: 1.2rem;
-        font-weight: 300;
     }
 }
 
@@ -51,7 +47,7 @@
 
 .about__me__title{
     color: $mainColor;
-    font-size: 1.5rem;
+    margin: 2rem;
 }
 
 

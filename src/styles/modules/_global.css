@@ -3,7 +3,66 @@
 } */
 
 body{
-    font-family: 'Open Sans', sans-seriff;
-    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     background-color: #eeeded;
+    line-height: 1.25;
+
+    @include atMedium{
+        line-height: 1.375;
+    }
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 300;
+
+    @include atSmall{
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+
+    @include atMedium{
+        font-size: 2.5rem;
+        line-height: 1.25;
+    }
+
+
+    @include atLarge{
+        font-size: 3rem;
+        line-height: 1.25;
+    }
+}
+
+h2 {
+    font-size: 1.625rem;
+    line-height: 1.15384615;
+
+    @include atMedium{
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+
+    @include atLarge{
+        font-size: 2.25rem;
+        line-height:1.25;
+    }
+
+}
+
+
+h3 {
+    font-size: 1.375rem;
+    line-height: 1.13636364;
+
+    @include atMedium{
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+    }
+
+    @include atLarge{
+        font-size: 1.75rem;
+        line-height: 1.25rem;
+    }
 }

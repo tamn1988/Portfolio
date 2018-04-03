@@ -4,7 +4,6 @@
     margin-bottom: 1rem;
     height: 20px;
     line-height: 20px;
-    font-size: .7rem;
 
     @include atLarge{
         height: 30px;
@@ -30,7 +29,7 @@
 
     &__title{
         background-color: $altGreen;
-        min-width: 70px;
+        min-width: 80px;
         color: white;
         text-align: center;
         font-weight: 400;

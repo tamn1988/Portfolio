@@ -75,8 +75,8 @@ class Highlight {
                         this.removeHighlight();
                         document.getElementById(matchingLink).classList.add(this.classToAdd);
                     }
-                }),
-                offset: '-100%'
+                }), 
+                offset: '-40%'
             })
         }
     }

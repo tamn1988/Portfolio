@@ -17,6 +17,7 @@
 
     &__button{
         padding: 1rem 3rem;
+        font-size: 1rem;
         background-color: #0b182b;
         border: 2px solid #fff;
         color: #fff;
