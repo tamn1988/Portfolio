@@ -37,6 +37,18 @@
     100% {width: 100%}
 }
 
+@keyframes slideUp{
+    0% {transform:translateY(45%)}
+    100% {transform: translateY(0)}
+}
+
+
+
+.animations--delay-stack{
+    animation: slideUp .5s 1, reveal .5s 1;
+    animation-fill-mode: forwards;
+}
+
 .animations--margin-right--hide{
     margin-right: -800px;
 }

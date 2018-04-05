@@ -1,15 +1,5 @@
 import waypoints from '../../../node_modules/waypoints/lib/noframework.waypoints.min';
 
-
-// var waypoint = new Waypoint ({
-//     element: document.querySelector(".generic-title"),
-//     handler: function(){
-//         alert("waypoint triggered");
-//     },
-//     offset: "40%"
-// })
-
-
 class SingleElement{
     constructor (el, offset, classToHide, classToAdd){
         this.elToAnimate = el;
@@ -43,22 +33,9 @@ class SingleElement{
     }
 }
 
-class MultipleElements{
+class MultipleElements extends SingleElement{
     constructor(el, offset, classToHide, classToAdd){
-        this.elToAnimate = el;
-        this.offset = offset;
-        this.classToHide = classToHide;
-        this.classToAdd = classToAdd;
-        this.hideInitially = this.hideInitially.bind(this);
-        this.hideInitially();
-        this.createWaypoints = this.createWaypoints.bind(this);
-        this.createWaypoints();   
-    }
-
-    hideInitially(){
-        for (let i = 0; i < this.elToAnimate.length; i++){
-            this.elToAnimate[i].classList.add(this.classToHide);
-        }
+        super(el, offset, classToHide, classToAdd)
     }
 
     createWaypoints(){
@@ -71,10 +48,12 @@ class MultipleElements{
             }),
             offset: this.offset
         })
+        super.createWaypoints();
     }
+
 }
 
 module.exports = {
     SingleElement,
-    MultipleElements
+    MultipleElements,
 }

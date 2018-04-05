@@ -41,7 +41,6 @@ class Highlight {
             element: currentItem,
             handler: ((direction) => {
                 if (direction = 'up') {
-                    console.log(direction)
                     this.removeHighlight();
                     document.getElementById(matchingLink).classList.add(this.classToAdd);
                 }
@@ -70,8 +69,7 @@ class Highlight {
             new Waypoint({
                 element: currentItem,
                 handler: ((direction) => {
-                    if (direction = 'up') {
-                        console.log(direction)
+                    if (direction = "up") {
                         this.removeHighlight();
                         document.getElementById(matchingLink).classList.add(this.classToAdd);
                     }
