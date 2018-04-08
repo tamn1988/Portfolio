@@ -2,15 +2,21 @@
     display: flex;
     flex-direction: column;
 
+    @include atMedium{
+        overflow: hidden;
+    }
+
     &--row-at-medium{
         @include atMedium{
             flex-direction: row;
         }
     }
 
-    @include atMedium{
-        overflow: hidden;
+    &--overflow-reset{
+        overflow: unset;
     }
+
+
 
     &--full-vh{
         height: 100vh;

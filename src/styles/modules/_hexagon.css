@@ -60,18 +60,3 @@
     left: 22px;
 }
 
-
-.hexagon__image{
-    background-image: url("https://placeimg.com/300/300/animals");
-    z-index: 5;
-}
-
-.hexagon__image:before{
-    background-image: url("https://placeimg.com/300/300/animals");
-    z-index: -1;
-}
-
-.hexagon__image:after{
-    background-image: url("https://placeimg.com/300/300/animals");
-    z-index: -2;
-}

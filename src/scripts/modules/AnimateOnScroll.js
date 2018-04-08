@@ -1,7 +1,7 @@
 import waypoints from '../../../node_modules/waypoints/lib/noframework.waypoints.min';
 
-class SingleElement{
-    constructor (el, offset, classToHide, classToAdd){
+class SingleElement {
+    constructor(el, offset, classToHide, classToAdd) {
         this.elToAnimate = el;
         this.offset = offset;
         this.classToHide = classToHide;
@@ -12,19 +12,19 @@ class SingleElement{
         this.createWaypoints();
     }
 
-    hideInitially(){
-        for (let i = 0; i < this.elToAnimate.length; i++){
+    hideInitially() {
+        for (let i = 0; i < this.elToAnimate.length; i++) {
             this.elToAnimate[i].classList.add(this.classToHide);
         }
     }
 
 
-    createWaypoints(){
-        for (let i = 0; i < this.elToAnimate.length; i++){
+    createWaypoints() {
+        for (let i = 0; i < this.elToAnimate.length; i++) {
             let currentItem = this.elToAnimate[i];
             new Waypoint({
                 element: currentItem,
-                handler: ( ()=> {
+                handler: (() => {
                     currentItem.classList.add(this.classToAdd);
                 }),
                 offset: this.offset
@@ -33,22 +33,49 @@ class SingleElement{
     }
 }
 
-class MultipleElements extends SingleElement{
-    constructor(el, offset, classToHide, classToAdd){
+class MultipleElements extends SingleElement {
+    constructor(el, offset, classToHide, classToAdd) {
         super(el, offset, classToHide, classToAdd)
     }
 
-    createWaypoints(){
+    createWaypoints() {
         new Waypoint({
             element: this.elToAnimate[0],
-            handler: ( () => {
-                for (let i = 0; i < this.elToAnimate.length; i++){
-                    this.elToAnimate[i].classList.add(this.classToAdd);
+            handler: ((direction) => {
+                if (direction === 'down') {
+                    for (let i = 0; i < this.elToAnimate.length; i++) {
+                        this.elToAnimate[i].classList.add(this.classToAdd);
+                    }
                 }
             }),
             offset: this.offset
         })
-        super.createWaypoints();
+
+    }
+
+}
+
+class DelayAnimate extends SingleElement {
+    constructor(el, offset, classToHide, classToAdd) {
+        super(el, offset, classToHide, classToAdd)
+    }
+
+    createWaypoints() {
+        new Waypoint({
+            element: this.elToAnimate[0],
+            handler: ((direction) => {
+                if (direction === 'down') {
+                    for (let i = 0; i < this.elToAnimate.length; i++) {
+                        console.log(this.elToAnimate[i]);
+                        setTimeout(() => {
+                            this.elToAnimate[i].classList.add(this.classToAdd);
+                        }, i * 200)
+                    }
+                }
+            }),
+            offset: this.offset
+        })
+
     }
 
 }
@@ -56,4 +83,5 @@ class MultipleElements extends SingleElement{
 module.exports = {
     SingleElement,
     MultipleElements,
+    DelayAnimate
 }
