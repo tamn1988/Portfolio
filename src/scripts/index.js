@@ -5,6 +5,7 @@ import AnimateOnScroll from '../scripts/modules/AnimateOnScroll.js';
 import Highlight from '../scripts/modules/HighlightSections.js';
 import Stickyfill from 'stickyfilljs';
 import zenscroll from 'zenscroll';
+import Modal from '../scripts/modules/Modal.js';
 
 new AnimateOnScroll.SingleElement(document.querySelectorAll('.generic-title'), '80%', 'animations--opacity--hide', 'animations__generic-title--slidein');
 new AnimateOnScroll.SingleElement(document.querySelectorAll('.generic-title__hr'), '85%', 'animations--opacity--hide', 'animations__generic-hr--slidein');
@@ -21,6 +22,7 @@ new AnimateOnScroll.DelayAnimate(document.querySelectorAll(".my-work__thumbnail"
 new Highlight("10%", '.primary-nav li', 'data-matching-li', 'primary-nav--li-is-highlighted');
 new Highlight("10%", '.primary-nav a', 'data-matching-a', 'primary-nav--a-is-highlighted');
 
+new Modal();
 
 
 var stickyElements = document.querySelectorAll('.sticky');

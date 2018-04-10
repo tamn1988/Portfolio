@@ -66,7 +66,6 @@ class DelayAnimate extends SingleElement {
             handler: ((direction) => {
                 if (direction === 'down') {
                     for (let i = 0; i < this.elToAnimate.length; i++) {
-                        console.log(this.elToAnimate[i]);
                         setTimeout(() => {
                             this.elToAnimate[i].classList.add(this.classToAdd);
                         }, i * 200)
