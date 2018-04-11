@@ -59,6 +59,14 @@
         width: 60%;
     }
 
+    &__slide--60{
+        width: 50%;
+    }
+
+    &__slide--40{
+        width: 40%;
+    }
+
     &__slide--20{
         width: 20%;
     }

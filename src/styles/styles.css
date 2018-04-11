@@ -1,7 +1,7 @@
 @import 'modules/_mixins.css';
 @import 'modules/_variables.css';
 @import 'modules/_global.css';
-@import 'modules/_animations.css';
+@import 'modules/_modal.css';
 @import 'modules/_flex.css';
 @import 'modules/_wrapper.css';
 @import 'modules/_large-hero.css';
@@ -16,6 +16,7 @@
 @import 'modules/_contact.css';
 @import 'modules/_footer.css';
 @import 'modules/_sticky.css';
-@import 'modules/_modal.css';
+@import 'modules/_animations.css';
+
 
 

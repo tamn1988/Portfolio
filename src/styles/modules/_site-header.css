@@ -1,8 +1,7 @@
 .site-header{
-
     background-color: #fff;
     border-bottom: 3px solid $altGreen;
-    z-index: 999;   
+    z-index: 999; 
 
     @include atMedium{
         background-color: #191d24;

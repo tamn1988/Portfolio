@@ -6,15 +6,15 @@
 }
 
 @keyframes slideInLeft{
-    0% { margin-left:-800px; }
-    80% { margin-left:0px; }
-    100% {margin-left: 0px;}
+    0% {transform: translateX(-150%);}
+    80% {transform: translateX(0);}
+    100% {transform: translateX(0);}
 }
 
 @keyframes slideInRight{
-    0% { margin-right:-800px; }
-    80% { margin-right:0px; }
-    100% {margin-right: 0px;}
+    0% {transform: translateX(150%);}
+    80% {transform: translateX(0);}
+    100% {transform: translateX(0);}
 }
 
 @keyframes reveal{
@@ -42,23 +42,97 @@
     100% {transform: translateY(0)}
 }
 
+@keyframes open{
+    0% {transform: scale(0.001, 0.001);}
+    50% {transform: scale(1, 0.01);}
+    99.99% {transform: scale(1, 1);}
+    100% {transform: scale(1, 1);}
+}
 
+@keyframes close{
+    0% {transform: scale(1, 1);opacity: 1; z-index: 99999;}
+    50% {transform: scale(1, 0.01);opacity: 1; z-index: 99999;}
+    99.99% {transform: scale(0, 0.01);opacity: 1; z-index: 99999;}
+    100% {transform: scale(0, 0.01); opacity: 0; z-index: -5}
+}
 
-.animations--delay-stack{
-    animation: slideUp .5s 1, reveal .5s 1;
+@keyframes openInner{
+    0% {transform: scale(0,0);}
+    50% {transform: scale(0,0);}
+    75% {transform: scale(1, 0.01);}
+    100% {transform: scale(1, 1);}
+}
+
+@keyframes closeInner{
+    0% {transform: scale(1,1);}
+    50% {transform: scale(1, 0.01);}
+    100% {transform: scale(0, 0);}
+}
+
+.animations--open-modal{
+    opacity: 1;
+    z-index: 999999;
+    animation: open .8s 1;
     animation-fill-mode: forwards;
 }
 
-.animations--margin-right--hide{
-    margin-right: -800px;
+/* .animations--open-modal--inner{
+    animation: openInner .8s 1;
+    animation-fill-mode: forwards;
+} */
+
+.animations--close-modal{
+    animation: close .8s 1;
+    animation-fill-mode: forwards;
 }
 
-.animations--margin-left--hide{
-    margin-left: -800px;
+/* .animations--close-modal--inner{
+    animation: closeInner .8s 1;
+    animation-fill-mode: forwards;
+} */
+
+
+/* .animations--open-modal-test{
+    opacity: 1;
+    z-index: 9999;
+}
+
+.animations--open-modal-inner-test{
+    transform: scale(1);
+} */
+
+
+.animations--delay-stack{
+
+    @include atMedium{
+        animation: slideUp .5s 1, reveal .5s 1;
+        animation-fill-mode: forwards;
+    }
+
+}
+
+.animations--translate-right--hide{
+
+    @include atMedium{
+        transform: translateX(150%);
+    }
+
+}
+
+.animations--translate-left--hide{
+
+    @include atMedium{
+        transform: translateX(-150%);
+    }
+
 }
 
 .animations--opacity--hide{
-    opacity: 0;
+
+
+    @include atMedium{
+        opacity: 0;
+    }
 }
 
 .animations--width--hide{
@@ -77,7 +151,8 @@
 
 .animations__skills-bar--slidein{
 
-    margin-left: 0;
+    /* animation: slideInLeft 2s 1;
+    animation-fill-mode: forwards; */
 
     @include atMedium{
         animation: slideInLeft 2s 1;
@@ -87,7 +162,7 @@
 }
 
 .animations__skills-bar--fill{
-    animation: fill 2s 1;
+    animation: fill 4s 1;
     animation-fill-mode: forwards;
 
     @include atMedium{
@@ -98,9 +173,8 @@
 }
 
 .animations__about-me--slidein-right{
-    margin-right: 0;
-    animation: slideInRightSlow 4s 1;
-    animation-fill-mode: forwards;
+    /* animation: slideInRight 2s 1;
+    animation-fill-mode: forwards; */
 
     @include atMedium{
         animation: slideInRight 2s 1, reveal 1s 1;

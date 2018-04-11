@@ -18,7 +18,7 @@
             overflow: hidden;
             white-space: nowrap;
             vertical-align: center;
-            animation: flash 7s infinite;
+            animation: flash 6s infinite;
             /* keyframes are under _animation.css */
         }
 
@@ -30,12 +30,12 @@
         }
 
         &__animated-title{
-            animation: slideIn 7s infinite;
+            animation: slideIn 6s infinite;
              /* keyframes are under _animation.css */
         }
 
         &__animated-subtitle{
-            animation: reveal 7s infinite;
+            animation: reveal 6s infinite;
              /* keyframes are under _animation.css */
         }
 

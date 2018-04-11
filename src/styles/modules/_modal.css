@@ -5,14 +5,12 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: -5;
     opacity: 0;
-    transition: opacity .2s linear;
- 
+    z-index: -5;
+    /* transition: opacity .3s linear; */
 
-    &--is-visible{
-        z-index: 99999;
-        opacity: 1;
+    &--body-prevent-scroll{
+        overflow: hidden;
     }
 
     &__close{
@@ -57,7 +55,9 @@
         background-color: #fff;
         box-shadow: 0px 0px 10px 0px rgba(121, 121, 121, 0.3);
         overflow-y: auto;
-        
+        /* transition: transform .3s linear;
+        transform: scale(.95); */
+
     }
 
     &__info{
@@ -78,3 +78,5 @@
     }
 
 }
+
+
