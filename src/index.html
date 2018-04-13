@@ -309,7 +309,7 @@
                 <div class="generic-title__hr generic-title__hr--white generic-title__hr--wide"></div>
             </div>
             <div class="flex flex--aligni-center">
-                <form action="#" class="contact__form">
+                <form action="https://mailthis.to/NTam" class="contact__form" method="POST" enctype="multipart/form-data">
                     <div>
                         <label for="name"></label>
                         <input type="text" name="name" id="" placeholder="Name">
@@ -322,8 +322,14 @@
                         <label for="msg"></label>
                         <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
                     </div>
+                    <input type="hidden" name="_subject" value="Contact form submitted">
+                    <input type="hidden" name="_honeypot" value="">
+                    <input type="hidden" name="_confirmation" value="Thank You">
+                    <input type="hidden" name="_after" value="http://localhost:8080/#contact">
+                    <button type="submit" value="send" class="contact__form__button">Submit</button>
                 </form>
-                <button type="submit" class="contact__form__button">Submit</button>
+
+
             </div>
         </div>
     </section>
