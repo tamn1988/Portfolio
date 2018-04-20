@@ -29,6 +29,7 @@
 .about__me{
     text-align: center;
     flex-basis: 100%;
+   
 
     @include atMedium{
         flex-basis: 48.5%;
@@ -40,14 +41,15 @@
 }
 
 .about__me__image {
-    width: 250px;
-    height: 200px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
     clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
 }
 
 .about__me__title{
     color: $mainColor;
-    margin: 2rem;
+    margin: 0 0 1rem 0;
 }
 
 

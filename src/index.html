@@ -70,15 +70,15 @@
             </div>
 
 
-            <div class="flex flex--row flex--wrap flex--padding-bottom flex--justify-space-between">
+            <div class="flex flex--row flex--wrap flex--padding-bottom flex--justify-space-between flex--aligni-start">
                 <div class="about-item">
                     <div class="hexagon__wrapper">
                         <div class="hexagon">
-                            <i class="fas fa-tachometer-alt hexagon__icon"></i>
+                            <i class="far fa-folder hexagon__icon"></i>
                         </div>
                     </div>
-                    <h3 class="about-item__title">Fast</h3>
-                    <p>Fast load times and Lag free intereaction, my highest priority</p>
+                    <h3 class="about-item__title">Organize</h3>
+                    <p>Modular code and BEM naming conventions provides easy to read and maintainable code</p>
                 </div>
                 <div class="about-item">
                     <div class="hexagon__wrapper">
@@ -87,25 +87,25 @@
                         </div>
                     </div>
                     <h3 class="about-item__title">Fast</h3>
-                    <p>Fast load times and Lag free intereaction, my highest priority</p>
+                    <p>Minimal dependencies and lazy loading provide quick and reponsive load times</p>
                 </div>
                 <div class="about-item">
                     <div class="hexagon__wrapper">
                         <div class="hexagon">
-                            <i class="fas fa-tachometer-alt hexagon__icon"></i>
+                            <i class="far fa-window-restore hexagon__icon"></i>
                         </div>
                     </div>
-                    <h3 class="about-item__title">Fast</h3>
-                    <p>Fast load times and Lag free intereaction, my highest priority</p>
+                    <h3 class="about-item__title">Support</h3>
+                    <p>Cross browser testing and polyfills insure compatibility across most browsers</p>
                 </div>
                 <div class="about-item">
                     <div class="hexagon__wrapper">
                         <div class="hexagon">
-                            <i class="fas fa-tachometer-alt hexagon__icon"></i>
+                            <i class="fas fa-mobile-alt hexagon__icon"></i>
                         </div>
                     </div>
-                    <h3 class="about-item__title">Fast</h3>
-                    <p>Fast load times and Lag free intereaction, my highest priority</p>
+                    <h3 class="about-item__title">Responsive</h3>
+                    <p>Responsive layouts and images designed to work on all viewports</p>
                 </div>
             </div>
 
@@ -206,10 +206,16 @@
 
                 <div class="about__me">
                     <div class="flex flex--aligni-center">
-                        <img class="about__me__image lozad" src="images/me.jpg" alt="Sitting dog in woods">
-                        <h3 class="about__me__title">Who is this guy?</h3>
-                        <p>I'm the Front-End Developer for EyeCue Lab in Portland, OR. I have serious passion for UI effects,
-                            animations and creating intuitive, dynamic user experiences. Let's make something special.</p>
+                            <svg class="about__me__image" viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                  <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="300">
+                                    <image xlink:href="dist/images/me.jpg" x="-25" width="150" height="100" />
+                                  </pattern>
+                                </defs>
+                                <polygon id="hex" points="25 8 75 8 100 50 75 92 25 92 0 50" fill="url(#img)" />
+                              </svg>
+                        <h3 class="about__me__title">About me</h3>
+                        <p>I'm an ex-professional poker player that enjoys a good mental challenge, whether it is from analyzing game theory to solving coding challenges. I'm currently a front-end developer striving to become a full stack developer.  </p>
                     </div>
                 </div>
             </div>
@@ -227,7 +233,8 @@
                     <img class="my-work__image lozad" src="images/nail-site-medium.jpg" alt="Sitting dog in woods">
                     <div class="my-work__thumbnail__slide-container">
                         <div class="my-work__thumbnail__slide-top flex flex--justify-center flex--aligni-center">
-                            <p>Miro Nails clone with small and ultra large viewports adjustment. Created using flexbox, Javascript, and PostCSS</p>
+                            <p>Miro Nails clone with small and ultra large viewports adjustment. Created using flexbox, Javascript,
+                                and PostCSS</p>
                         </div>
                         <div class="my-work__thumbnail__slide-bottom flex flex--justify-center flex--aligni-center">
                             <a href="#/" class="my-work__thumbnail__button noZensmooth" data-matching-link="nail-site">Learn More</a>
@@ -280,7 +287,7 @@
                 <div class="generic-title__hr generic-title__hr--white generic-title__hr--wide"></div>
             </div>
             <div class="flex flex--aligni-center">
-                <form action="https://mailthis.to/NTam" class="contact__form" method="POST" enctype="multipart/form-data">
+                <form action="https://mailthis.to/NTam" class="contact__form flex" method="POST" enctype="multipart/form-data">
                     <div>
                         <label for="name"></label>
                         <input type="text" name="name" id="" placeholder="Name">
@@ -309,10 +316,7 @@
         <div class="footer__container flex flex--justify-center">
             <div class="wrapper">
                 <div class="flex flex--row flex--justify-center flex--aligni-center">
-                    <a href="#" class="footer__link">
-                        <i class="fab fa-linkedin-in footer__icon"></i>
-                    </a>
-                    <a href="#" class="footer__link">
+                    <a href="https://github.com/tamn1988" class="footer__link">
                         <i class="fab fa-github footer__icon"></i>
                     </a>
                 </div>

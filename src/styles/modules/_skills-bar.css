@@ -29,10 +29,16 @@
 
     &__title{
         background-color: $altGreen;
-        min-width: 80px;
+        min-width: 70px;
         color: white;
         text-align: center;
         font-weight: 400;
+        font-size: .85rem;
+
+        @include atSmall{
+            min-width: 80px;
+            font-size: 1rem;
+        }
     }
 
     &__slide{
@@ -42,21 +48,33 @@
     }
 
     &--fill{
-        background-color: #0b9393;
+        background-color: #7a7d92;
         /* animation: fill 2s 1; */
     }
 
     &__slide--90{
-        width: 80%;
+        width: 70%;
+
+        @include atSmall{
+            width: 80%;
+        }
 
     }
 
     &__slide--80{
-        width: 70%;
+        width: 60%;
+
+        @include atSmall{
+            width: 70%;
+        }
     }
 
     &__slide--70{
-        width: 60%;
+        width: 50%;
+
+        @include atSmall{
+            width: 60%;
+        }
     }
 
     &__slide--60{

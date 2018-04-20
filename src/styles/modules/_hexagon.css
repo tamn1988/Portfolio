@@ -2,13 +2,15 @@
     text-align: center;
     position: relative;
     display: inline-block;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 
-    &--large{
-        height: 300px;
-        width: 300px;
+    @include atSmall{
+        height: 100px;
+        width: 100px;
     }
+
+
 }
 
 .hexagon{
@@ -52,11 +54,16 @@
 }
 
 .hexagon__icon{
-    font-size: 3rem;
+    font-size: 2rem;
     position: absolute;
     z-index: 1;
     color: #fff;
-    top: 22px;
-    left: 22px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include atSmall{
+        font-size: 3rem;
+    }
 }
 

@@ -11,9 +11,9 @@
 
 .footer__icon{
     font-size: 2rem;
-    border: 2px solid $altGreen;
+    border: 2px solid #fff;
     padding: .5rem;
-    color: $altGreen;
+    color: #fff;
 }
 
 .footer__text{

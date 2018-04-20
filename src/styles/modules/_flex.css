@@ -51,6 +51,10 @@
         align-items: center;
     }
 
+    &--aligni-start{
+        align-items: flex-start;
+    }
+
     &--justify-space-around{
         justify-content: space-around;
     }
