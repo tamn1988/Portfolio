@@ -1,9 +1,12 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   entry: "./src/scripts/index.js",
-
+  output: {
+    path: path.resolve(__dirname, 'docs'),
+  },
   module: {
     rules: [
       {
@@ -34,7 +37,7 @@ module.exports = {
         use: [{
           loader: 'file-loader',
           options: {
-            name: '../dist/images/[name].[ext]', // check the path
+            name: '../docs/images/[name].[ext]', // check the path
           }
         },
           {
