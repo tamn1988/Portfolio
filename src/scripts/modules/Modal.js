@@ -44,7 +44,7 @@ class Modal {
                 this.modalHeader.innerHTML = 'Travel Site';
                 this.modalBody.innerHTML = 'A Mock Travel Agency website created using grunt, postcss, JQuery, ES6 class modules, and BEM naming practices.'
                 this.modalImage.src = 'dist/images/travel-site-medium.jpg'
-                this.modalButton.href = 'https://codepen.io/Tamn1988/full/NwNGpa/';
+                this.modalButton.href = 'https://tamn1988.github.io/travel-site/';
                 this.modalButton.innerHTML = 'View';
                 break;
             case "wikipedia":
@@ -58,8 +58,8 @@ class Modal {
                 this.modalHeader.innerHTML = 'Miro Nails';
                 this.modalBody.innerHTML = 'A clone of Miro Nails built with pure javascript, ES6 class modules, flexbox and BEM naming practices. It has minor changes for mobile and large viewports for a better responsive layout'
                 this.modalImage.src = 'dist/images/nail-site-medium.jpg'
-                this.modalButton.href = 'https://codepen.io/Tamn1988/full/NwNGpa/';
-                this.modalButton.innerHTML = 'View on CodePen';
+                this.modalButton.href = 'https://tamn1988.github.io/Nails/';
+                this.modalButton.innerHTML = 'View';
                 break;
         }
         this.openModal();
