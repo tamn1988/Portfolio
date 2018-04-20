@@ -1169,23 +1169,24 @@ h3 {
         flex-shrink: 1;
         opacity: 1;
         max-width: 100%;
+        border: 2px solid #494e6b;
+        box-sizing: border-box;
     }
+
+@media (min-width: 400px){
+
+    .my-work__thumbnail{
+        max-width: 600px;
+        width: 100%;
+    }
+}
 
 @media (min-width: 800px){
 
     .my-work__thumbnail{
         max-width: 50%;
+        border: none;
     }
-}
-
-.my-work{/* &__thumbnail__link{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 5;
-    } */
 }
 
 .my-work__thumbnail__slide-container{
@@ -1202,13 +1203,19 @@ h3 {
         transition: opacity .4s linear;
 }
 
-.my-work__thumbnail__slide-container:hover {
-    opacity: 1;
+@media (min-width: 800px){
+
+    .my-work__thumbnail__slide-container:hover {
+        opacity: 1;
+    }
 }
 
-.my-work__thumbnail__slide-container:hover .my-work__thumbnail__slide-bottom, .my-work__thumbnail__slide-container:hover .my-work__thumbnail__slide-top{
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+@media (min-width: 800px){
+
+    .my-work__thumbnail__slide-container:hover .my-work__thumbnail__slide-bottom, .my-work__thumbnail__slide-container:hover .my-work__thumbnail__slide-top{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
 }
 
 .my-work__thumbnail__slide-top{
@@ -1250,6 +1257,36 @@ h3 {
         color: #192231;
         padding: 1rem 1.7rem;
         border: 2px solid #d4b208;
+}
+
+.my-work__thumbnail__button--mobile{
+        position: absolute;
+        padding: .8rem 1.5rem;
+        bottom: 5%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        background-color: #192231;
+        border: none;
+        color: #fff;
+        z-index: 2;
+}
+
+@media (min-width: 800px){
+
+    .my-work__thumbnail__button--mobile{
+        display: none;
+    }
+}
+
+.my-work{/* &__thumbnail__link{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+    } */
 }
 
 /* .my-work__thumbnail__link:hover .my-work__thumbnail__slide-bottom{
