@@ -41,10 +41,13 @@
 }
 
 .about__me__image {
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     height: auto;
-    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+
+    @include atSmall{
+        max-width: 300px;
+    }
 }
 
 .about__me__title{
