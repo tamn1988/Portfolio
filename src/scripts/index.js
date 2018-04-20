@@ -33,30 +33,3 @@ new Modal();
 
 var stickyElements = document.querySelectorAll('.sticky');
 Stickyfill.add(stickyElements);
-
-
-
-// const button = document.querySelector('.contact__form__button');
-// const form = document.querySelector('.contact__form');
-
-// button.addEventListener('click', (event)=>{
-//     event.preventDefault();
-//     let XHR = new XMLHttpRequest();
-//     let data = new FormData(form);
-
-//     XHR.addEventListener('load', function(event) {
-//         alert('Yeah! Data sent and response loaded.');
-//       });
-
-//       XHR.addEventListener('error', function(event) {
-//         alert('Oops! Something goes wrong.');
-//       });
-
-//       XHR.open('POST', 'https://mailthis.to/tamn1988@gmail.com');
-
-//       XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-
-//       XHR.send(data);
-// })
-
-
