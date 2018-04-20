@@ -9,9 +9,17 @@
         flex-shrink: 1;
         opacity: 1;
         max-width: 100%;
+        border: 2px solid $altGreen;
+        box-sizing: border-box;
+
+        @include atSmall{
+            max-width: 600px;
+            width: 100%;
+        }
 
         @include atMedium{
             max-width: 50%;
+            border: none;
         }
     }
 
@@ -30,11 +38,17 @@
         transition: opacity .4s linear;
 
         &:hover {
-            opacity: 1;
+
+            @include atMedium{
+                opacity: 1;
+            }
         }
 
         &:hover .my-work__thumbnail__slide-bottom , &:hover .my-work__thumbnail__slide-top{
-            transform: translateY(0);
+
+            @include atMedium{
+                transform: translateY(0);
+            }
         }
     }
 
@@ -71,6 +85,22 @@
         color: $mainColor;
         padding: 1rem 1.7rem;
         border: 2px solid $altRed;
+    }
+
+    &__thumbnail__button--mobile{
+        position: absolute;
+        padding: .8rem 1.5rem;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $mainColor;
+        border: none;
+        color: #fff;
+        z-index: 2;
+
+        @include atMedium{
+            display: none;
+        }
     }
 
     /* &__thumbnail__link{
