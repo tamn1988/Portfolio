@@ -1554,31 +1554,12 @@ h3 {
             animation-fill-mode: forwards;
 }
 
-/* .animations--open-modal--inner{
-    animation: openInner .8s 1;
-    animation-fill-mode: forwards;
-} */
-
 .animations--close-modal{
     -webkit-animation: close .8s 1;
             animation: close .8s 1;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
 }
-
-/* .animations--close-modal--inner{
-    animation: closeInner .8s 1;
-    animation-fill-mode: forwards;
-} */
-
-/* .animations--open-modal-test{
-    opacity: 1;
-    z-index: 9999;
-}
-
-.animations--open-modal-inner-test{
-    transform: scale(1);
-} */
 
 @media (min-width: 800px){
 

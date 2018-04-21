@@ -56,7 +56,7 @@ class Modal {
                 break;
             case "nail-site":
                 this.modalHeader.innerHTML = 'Miro Nails';
-                this.modalBody.innerHTML = 'A clone of Miro Nails built with pure javascript, ES6 class modules, flexbox and BEM naming practices. It has minor changes for mobile and large viewports for a better responsive layout'
+                this.modalBody.innerHTML = 'A clone of Miro Nails built with pure javascript, ES6 class modules, flexbox and BEM naming practices. It has minor layout changes to better accommodate mobile and large viewports for a better responsive layout'
                 this.modalImage.src = 'images/nail-site-medium.jpg'
                 this.modalButton.href = 'https://tamn1988.github.io/Nails/';
                 this.modalButton.innerHTML = 'View';

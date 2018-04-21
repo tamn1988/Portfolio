@@ -76,31 +76,10 @@
     animation-fill-mode: forwards;
 }
 
-/* .animations--open-modal--inner{
-    animation: openInner .8s 1;
-    animation-fill-mode: forwards;
-} */
-
 .animations--close-modal{
     animation: close .8s 1;
     animation-fill-mode: forwards;
 }
-
-/* .animations--close-modal--inner{
-    animation: closeInner .8s 1;
-    animation-fill-mode: forwards;
-} */
-
-
-/* .animations--open-modal-test{
-    opacity: 1;
-    z-index: 9999;
-}
-
-.animations--open-modal-inner-test{
-    transform: scale(1);
-} */
-
 
 .animations--delay-stack{
 
@@ -128,7 +107,6 @@
 }
 
 .animations--opacity--hide{
-
 
     @include atMedium{
         opacity: 0;
