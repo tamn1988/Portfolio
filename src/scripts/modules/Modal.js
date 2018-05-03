@@ -33,6 +33,12 @@ class Modal {
 
     injectContent(e) {
         switch (e.srcElement.getAttribute('data-matching-link')) {
+            case "pump-watch":
+                this.modalHeader.innerHTML = 'Pump Watch';
+                this.modalBody.innerHTML = 'A React application design to monitor Binance exchange crypto currency price fluctuations within a short time frame. Application utilizes React, Reacharts, websockets and the fetch api'
+                this.modalImage.src = 'images/pump-watch.png'
+                this.modalButton.href = 'https://tamn1988.github.io/pump-watch/';
+                this.modalButton.innerHTML = 'View';
             case "pomodoro":
                 this.modalHeader.innerHTML = 'Pomodoro Timer';
                 this.modalBody.innerHTML = 'A Pomodoro timer created in pure javascript. It includes start, stop, reset, and time interval changing functions'
