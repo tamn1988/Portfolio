@@ -36,7 +36,7 @@ class Modal {
         switch (e.srcElement.getAttribute('data-matching-link')) {
             case "pump-watch":
                 this.modalHeader.innerHTML = 'Pump Watch';
-                this.modalBody.innerHTML = 'A React application design to monitor Binance exchange crypto currency price fluctuations within a short time frame. Application utilizes React, Reacharts, websockets and the fetch api';
+                this.modalBody.innerHTML = 'A React application design to monitor Binance exchange crypto currency price fluctuations within two minute time intervals. Application utilizes React, Recharts, websockets and the fetch api';
                 this.modalImage.src = 'images/pump-watch.png'
                 this.modalButton.href = 'https://tamn1988.github.io/pump-watch/';
                 this.modalButton.innerHTML = 'View';
